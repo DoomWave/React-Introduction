@@ -7,6 +7,9 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView>
         <Text style={style.title}>Hi</Text>
+        <View style={style.square}>
+          <Text style={style.innerTXT}>Supeerr!</Text>
+        </View>
       </SafeAreaView>
     </SafeAreaProvider>
   )
