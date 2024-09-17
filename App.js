@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image,  } from 'react-native';
-import { Profile } from './components/Profile/Profile';
-
+// import { Profile } from './components/Profile/Profile';
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context"
+import { style } from './App.Style';
 export default function App() {
   return(
-    <>
-      <Text>Hi</Text>
-      <Profile />
-    </>
+    <SafeAreaProvider>
+      <SafeAreaView>
+        <Text style={style.title}>Hi</Text>
+      </SafeAreaView>
+    </SafeAreaProvider>
   )
 }
