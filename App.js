@@ -5,10 +5,7 @@ import { style } from './App.Style';
 export default function App() {
   return(
     <SafeAreaProvider>
-      <SafeAreaView style={{flex: 1,alignItems: "flex-end"}}>
-       <View style={style.box1}/>
-       <View style={style.box2}/>
-       <View style={style.box3}/>
+      <SafeAreaView style={{flex: 1}}>
       </SafeAreaView>
     </SafeAreaProvider>
   )
