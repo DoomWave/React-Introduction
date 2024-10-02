@@ -2,21 +2,20 @@ import { StyleSheet } from "react-native";
 
 export const s = StyleSheet.create({
     container: {
-        backgroundColor: "black",
-        elevation:10,
+        padding: 20,
+        backgroundColor: "white",
         shadowColor: "#000",
         shadowOffset: {
-            width: 2,
+            width: 0,
             height: 2,
         },
         shadowOpacity: 0.25,
-        shadowRadius: 3.84
+        shadowRadius: 3.84,
+
+        elevation: 5
     },
     header: {
         flexDirection: "50%",
-    },
-    social: {
-
     },
     avatar: {
         width: 70,
@@ -24,11 +23,16 @@ export const s = StyleSheet.create({
         borderRadius: "50%"
     },
     name: {
-       fontSize: 24,
+       fontSize: 25,
        fontWeight: "bold", 
        marginBottom: 5,
     },
     texts: {
+        flex: 1,
+        padding: 15,
+    },
+    social: {
 
     },
+
 })
