@@ -1,7 +1,7 @@
 import { View, Text, Image, Icons, TouchableOpacity } from "react-native";
 import { s } from "./ProfileCard.style";
 import {FontAwesome} from '@expo/vector-icons'
-export function ProfileCard ({ firstName, lastName, age, }){
+export function ProfileCard ({ firstName, lastName, age, children}) {
     return (
     <View Style={s.container}>
         <View style={s.header}>
@@ -12,6 +12,7 @@ export function ProfileCard ({ firstName, lastName, age, }){
           />
          </View>
          <View style={s.texts}>
+          {children}
           <Text style={s.name}>{firstName}{lastName}</Text>
            <Text>
              Hi I am React native inter-medium, I am {age} years old, Lets get the touch, and soon
