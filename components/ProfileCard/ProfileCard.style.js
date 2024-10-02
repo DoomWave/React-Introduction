@@ -15,7 +15,7 @@ export const s = StyleSheet.create({
         elevation: 5
     },
     header: {
-        flexDirection: "50%",
+        flexDirection: "row"
     },
     avatar: {
         width: 70,
@@ -23,10 +23,10 @@ export const s = StyleSheet.create({
         borderRadius: "50%"
     },
     name: {
-       fontSize: 25,
-       fontWeight: "bold", 
-       marginBottom: 5,
-    },
+        fontSize: 25,
+        fontWeight: "bold", 
+        marginBottom: 5,
+     },
     texts: {
         flex: 1,
         padding: 15,
