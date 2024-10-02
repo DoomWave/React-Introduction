@@ -1,4 +1,4 @@
-import { View, Text, Image, Icons } from "react-native";
+import { View, Text, Image, Icons, TouchableOpacity } from "react-native";
 import { s } from "./ProfileCard.style";
 import {FontAwesome} from '@expo/vector-icons'
 export function ProfileCard (){
@@ -19,9 +19,15 @@ export function ProfileCard (){
          </View>
         </View>
         <View style={s.social}>
+            <TouchableOpacity style={s.socialBtn}>
             <FontAwesome name="twitter" size={24} color="#1DA1F2"/>
+            </TouchableOpacity>
+            <TouchableOpacity style={s.socialBtn}>
             <FontAwesome name="linkedin-square" size={24} color="#0A66C2"/>
+            </TouchableOpacity>
+            <TouchableOpacity style={s.socialBtn}>
             <FontAwesome name="github" size={24} color="#333"/>
+            </TouchableOpacity>
         </View>
     </View>
     )

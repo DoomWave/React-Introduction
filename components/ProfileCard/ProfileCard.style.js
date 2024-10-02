@@ -15,9 +15,6 @@ export const s = StyleSheet.create({
 
         elevation: 5
     },
-    header: {
-        flexDirection: "row"
-    },
     avatar: {
         width: 70,
         height: 70,
@@ -32,8 +29,18 @@ export const s = StyleSheet.create({
         flex: 1,
         padding: 15,
     },
+    header: {
+        flexDirection: "row"
+    },
     social: {
-
+        padding: 10,
+        justifyContent: "space-evenly",
+        flexDirection: "row",
     },
 
+    socialBtn: {
+        borderRadius: "50%",
+        padding: 10,
+        backgroundColor: "#eeee"
+    }
 })
