@@ -10,5 +10,16 @@ export const s = StyleSheet.create({
             height: 2,
         },
         shadowOpacity: 0.25,
-    }
+        shadowRadius: 3.84
+    },
+    header: {
+
+    },
+    social: {
+
+    },
+    avatar: {
+        width: 70,
+        height: 70,
+    },
 })
