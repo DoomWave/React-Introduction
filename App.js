@@ -1,12 +1,22 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity,  } from 'react-native';
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context"
-import { s } from './components/ProfileCard/ProfileCard.style';
-import { useState } from "react";
+import { style } from './App.Style';
+import {ProfileCard} from "./components/ProfileCard/ProfileCard"
+import { Alert } from "react-native";
 
 export default function App() {
-  // const [movie, setMovie] = useState("Star Wars");
-
-  // setMovie("Forest Gump");
-  
-  return<></>;
+  function hello(name){
+    Alert.alert("Hello "+name)
+  }
+  return(
+    <SafeAreaProvider>
+      <SafeAreaView style={style.container}>
+        <ProfileCard 
+         onPressTitle={hello} 
+         firstName={"Doom"} 
+         lastName={"Wave"} 
+         age={30} 
+        />
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
 }
