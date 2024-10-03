@@ -1,19 +1,22 @@
-import { StyleSheet, Text, View, Image,  } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity,  } from 'react-native';
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context"
-import { style } from './App.Style';
-import { ProfileCard } from './components/ProfileCard/ProfileCard';
-import { AgeCounter } from './components/ageCounter/AgeCounter';
+import { s } from './components/ProfileCard/ProfileCard.style';
+import { useState } from "react";
+
 export default function App() {
+  const [movie, setMovie] = useState("Star Wars");
+
+  function updateMovie(){
+    setMovie("Titanic");
+  }
   return(
     <SafeAreaProvider>
-     <SafeAreaView style={{ flex: 1, justifyContent: "center", padding: 20 }}>
-      <AgeCounter/>
-      {/* <ProfileCard 
-       firstName={"Doom"} 
-       lastName={"Wave"} 
-       age={19}
-       isOpenToWork={true}
-      /> */}
+     <SafeAreaView style={s.container}>
+
+      <TouchableOpacity onPress={updateMovie}>
+        <Text style={{FontSize: 40}}>{movie}</Text>
+      </TouchableOpacity>
+
      </SafeAreaView>
     </SafeAreaProvider>
   )
