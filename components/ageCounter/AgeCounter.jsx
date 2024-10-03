@@ -12,7 +12,10 @@ export function AgeCounter() {
     console.log("I render", age);
     return (
     <>
-        <TouchableOpacity onPress={increaseAge} style={{backgroundColor: "#00A2FF"}}>
+        <TouchableOpacity 
+         onPress={increaseAge} 
+         style={{backgroundColor: "#00A2FF"}}
+        >
           <Text style={{ fontSize: 40, color: "white"}}>Increase age</Text>
         </TouchableOpacity>
         <DisplayAge age={age} />
