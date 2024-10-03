@@ -4,20 +4,9 @@ import { s } from './components/ProfileCard/ProfileCard.style';
 import { useState } from "react";
 
 export default function App() {
-  const [movie, setMovie] = useState("Star Wars");
+  // const [movie, setMovie] = useState("Star Wars");
 
-  function updateMovie(){
-    setMovie("Titanic");
-  }
-  return(
-    <SafeAreaProvider>
-     <SafeAreaView style={s.container}>
-
-      <TouchableOpacity onPress={updateMovie}>
-        <Text style={{FontSize: 40}}>{movie}</Text>
-      </TouchableOpacity>
-
-     </SafeAreaView>
-    </SafeAreaProvider>
-  )
+  // setMovie("Forest Gump");
+  
+  return<></>;
 }

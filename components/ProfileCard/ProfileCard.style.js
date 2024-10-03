@@ -2,18 +2,18 @@ import { StyleSheet } from "react-native";
 
 export const s = StyleSheet.create({
     container: {
-        borderRadius: 10,
-        padding: 20,
-        backgroundColor: "white",
-        shadowColor: "black",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
+        // borderRadius: 10,
+        // padding: 20,
+        // backgroundColor: "white",
+        // shadowColor: "black",
+        // shadowOffset: {
+        //     width: 0,
+        //     height: 2,
+        // },
+        // shadowOpacity: 0.25,
+        // shadowRadius: 3.84,
 
-        elevation: 5
+        // elevation: 5
     },
     avatar: {
         width: 70,
