@@ -9,7 +9,6 @@ export function ProfileCard
      isOpenToWork, 
      onPressTitle
     }) {
-
 function onPressTitle_(){
     onPressTitle(firstName+lastName)
 }
