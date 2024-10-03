@@ -1,12 +1,14 @@
+import { useState } from "react";
 import { Text,TouchableOpacity } from "react-native";
 
 export function AgeCounter() {
-    let age = 19
+    const [age, setAge ]= useState(19)
+
     function increaseAge(){
-        age++;
-        console.log(age);
+     setAge(age + 1)
     }
 
+    console.log("I render", age);
     return (
     <>
         <TouchableOpacity onPress={increaseAge} style={{backgroundColor: "#00A2FF"}}>
